@@ -1,0 +1,14 @@
+server:
+  port: 18202
+spring:
+  application:
+    name: logTest1
+
+apollo:
+   bootstrap:
+        # will inject 'application' namespace in bootstrap phase
+        enabled: true
+        # 将Apollo配置加载提到初始化日志系统之前
+        eagerLoad:
+            enabled: true
+# #apollo.accesskey.secret=1cf998c4e2ad4704b45a98a509d15719
